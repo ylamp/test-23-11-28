@@ -1,0 +1,16 @@
+server:
+  port: 28802
+spring:
+  application:
+    name: users-consumer
+dubbo:
+  application:
+    name: users-consumer-service
+  registry:
+    address: zookeeper://10.211.55.9:2181
+    timeout: 16000
+  metadata-report:
+    address: zookeeper://10.211.55.9:2181
+  protocol:
+    name: dubbo
+    port: 20884
